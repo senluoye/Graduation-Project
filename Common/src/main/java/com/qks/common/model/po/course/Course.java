@@ -1,5 +1,6 @@
-package com.qks.common.model.po;
+package com.qks.common.model.po.course;
 
+import com.qks.common.model.po.BaseModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -24,7 +25,7 @@ public class Course extends BaseModel {
     // 课程描述
     private String description;
 
-    // 封面id
+    // 封面文件id
     private String faceImgId;
 
     // 学期

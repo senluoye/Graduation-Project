@@ -1,5 +1,6 @@
-package com.qks.common.model.po;
+package com.qks.common.model.po.competition;
 
+import com.qks.common.model.po.BaseModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -30,11 +31,14 @@ public class CompetitionInfo extends BaseModel {
     private Timestamp endTime;
 
     // 赛事描述
-    private String Description;
+    private String description;
 
     // 赛事封面
     private String faceImgId;
 
     // 举办单位
     private String organizer;
+
+    // 发布者
+    private Long publisherId;
 }

@@ -1,5 +1,6 @@
-package com.qks.common.model.po;
+package com.qks.common.model.po.dynamic;
 
+import com.qks.common.model.po.BaseModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -16,18 +17,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class DynamicComment extends BaseModel {
+public class DynamicRel extends BaseModel {
 
     // 动态id
     private Long dynamicId;
 
-    // 用户id
-    private Long userId;
-
     // 父id
     private Long parentId;
-
-    // 评论内容
-    private String content;
 
 }

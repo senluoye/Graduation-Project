@@ -1,5 +1,6 @@
-package com.qks.common.model.po;
+package com.qks.common.model.po.user;
 
+import com.qks.common.model.po.BaseModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -24,7 +25,7 @@ public class User extends BaseModel {
     // 电话
     private String phone;
 
-    // 学号
+    // 学号/工号
     private String code;
 
     // 年龄

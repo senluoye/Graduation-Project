@@ -1,4 +1,4 @@
-package com.qks.common.model.po.relations;
+package com.qks.common.model.po.user;
 
 import com.fasterxml.jackson.databind.ser.Serializers;
 import com.qks.common.model.po.BaseModel;
@@ -19,6 +19,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class UserRoleRel extends BaseModel {
-    private String userId;
-    private String roleId;
+    private Long userId;
+
+    private Long roleId;
 }

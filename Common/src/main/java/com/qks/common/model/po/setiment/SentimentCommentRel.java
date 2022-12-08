@@ -1,4 +1,4 @@
-package com.qks.common.model.po.relations;
+package com.qks.common.model.po.setiment;
 
 import com.qks.common.model.po.BaseModel;
 import lombok.AllArgsConstructor;

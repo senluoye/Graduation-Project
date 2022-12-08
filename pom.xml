@@ -16,6 +16,7 @@
         <module>Competition-Service</module>
         <module>Gateway-Service</module>
         <module>FeignClient</module>
+        <module>Sentiment-Service</module>
     </modules>
 
     <properties>

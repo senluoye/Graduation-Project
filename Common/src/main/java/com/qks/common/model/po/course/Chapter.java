@@ -1,5 +1,6 @@
-package com.qks.common.model.po;
+package com.qks.common.model.po.course;
 
+import com.qks.common.model.po.BaseModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -18,12 +19,15 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class Chapter extends BaseModel {
 
+    // 课程id
+    private Long courseId;
+
     // 章节名称
     private String name;
 
     // 章节描述
     private String description;
 
-    // 视频id
+    // 视频文件id
     private String videoId;
 }

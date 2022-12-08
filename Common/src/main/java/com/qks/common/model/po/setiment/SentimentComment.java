@@ -1,5 +1,6 @@
-package com.qks.common.model.po;
+package com.qks.common.model.po.setiment;
 
+import com.qks.common.model.po.BaseModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
