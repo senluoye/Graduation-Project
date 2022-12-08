@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: userservice # 服务名称
+  profiles:
+    active: dev #开发环境，这里是dev
+  cloud:
+    nacos:
+      server-addr: 42.193.247.89:8848 # Nacos地址
+      config:
+        server-addr: 42.193.247.89:8848
+        file-extension: yaml # 文件后缀名
+        shared-configs[0]:
+            data-id: common-config.yml # 配置文件名-Data Id
+    sentinel:
+      transport:
+        dashboard: 42.193.247.89:8858 # sentinel的dashboard地址
+        clientIp: localhost # 这里表明客户端的ip是本地

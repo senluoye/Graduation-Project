@@ -1,17 +1,16 @@
 package com.qks.common.handler;
 
-import com.netflix.client.ClientException;
 import com.qks.common.exception.LoginException;
 import com.qks.common.exception.ServiceException;
 import com.qks.common.utils.Res;
 import com.qks.common.model.vo.ResVO;
+import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
@@ -100,15 +99,5 @@ public class GlobalExceptionHandler {
         return Res.error(-1, e.getMessage());
     }
 
-    @ExceptionHandler(value = ClientException.class)
-    @ResponseBody
-    private ResVO<Map<String, Object>> clientExceptionHandler(HttpServletRequest request, Exception e) {
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd:HH:mm:ss");
-        logger.error("最新的请求: " + df.format(new Date()));
-        logger.error(request.getRequestURI());
-        logger.error(String.valueOf(e));
-
-        return Res.error(-1, "服务出现异常");
-    }
 }
 
